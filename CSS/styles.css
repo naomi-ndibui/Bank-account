@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+}
+
+#deposit {
+  float: right;
+}
+
+#show-account {
+  display: none;
+}
+
+.account {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.account:hover {
+  text-decoration: underline;
+}
+
+#show-deposit {
+  display: none;
+}
+
+.deposit {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.deposit:hover {
+  text-decoration: underline;
+}
