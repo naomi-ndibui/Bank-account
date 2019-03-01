@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+  <script src="JS/jQuery.js"></script>
+  <script src="JS/scripts.js"></script>
+  <title>Bank Account</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Moringa Bank</h1>
+    <div class="well">
+    <div id="account">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Register New Account:</h2>
+          <form id="new-account">
+            <div class="form-group">
+              <label for="new-name">Name</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <div class="form-group">
+              <label for="new-initial-deposit">Initial Deposit</label>
+              <input type="number" class="form-control" id="new-initial-deposit">
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <div id="show-account">
+
+            <p>name: <span class="name"></span></p>
+            <p>initial deposit: <span class="initial-deposit"></span></p>
+          </div>
+        </div>
+
+        <div id="deposit">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Deposit or Withdraw Funds:</h2>
+              <form id="new-deposit">
+                <div class="form-group">
+                  <label for="new-deposit-amount">Deposit Amount</label>
+                  <input type="number" class="form-control" id="new-deposit-amount">
+                </div>
+                <div class="form-group">
+                  <label for="new-withdraw-amount">withdraw Amount</label>
+                  <input type="number" class="form-control" id="new-withdraw-amount">
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <div id="show-deposit">
+
+                <p>deposit amount: <span class="deposit-amount"></span></p>
+                <p>withdraw amount: <span class="withdraw-amount"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <input type="submit" class="btn btn-success" value="Current Balance">
+    <input type="reset" class="btn btn-primary" value="Cancel">
+
+  </div>
+</body>
+
+</html>
